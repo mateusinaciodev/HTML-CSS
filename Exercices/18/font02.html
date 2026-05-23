@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+
+        /*Tipos de format()
+        - opentype(otf)
+        - truetype(ttf)
+        -embedded-opentype(eot)
+        -true-type-aat(apple advanced typography)
+        -svg(fontes em formato de imagem vetorial)
+        */
+
+        /*como achar fontes em imagens:
+        https://www.myfonts.com/pt/
+        https://www.fontsquirrel.com/
+        https://www.whatfontis.com/*/
+
+        @font-face {
+            font-family: 'Times New Roman'; /* Nome da fonte personalizada */
+            src: url('https://fonts.gstatic.com/s/timesnewroman/v1/TimesNewRoman-Regular.ttf') format('truetype'); /* URL da fonte e formato */}
+        body {
+            font-family: 'Arial', Helvetica, sans-serif; /* Exemplo de uso de uma fonte genérica */
+        }
+            
+        h1 {
+            font-family: 'Times New Roman', Times, serif; /* Exemplo de uso de uma fonte externa */
+            font-size: 3em;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fontes Externas</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quam beatae similique ipsam aut error nemo consequatur. Temporibus, magni assumenda quod minima explicabo doloribus ipsa sed, itaque ex dignissimos sit!</p>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML 5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir o navegador em vários dispositivos para ver a imagem mudar conforme o tamanho da tela.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="images/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="images/foto-m.png">
+        <img src="images/foto-g.png" alt="Imagem flexível tamanho grande">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir um arquivo de áudio usando a tag <code>&lt;audio&gt;</code> do HTML 5. O código abaixo inclui um arquivo de áudio e controles para reprodução:</p>
+    <audio src="midia/audio-ytb.mp3" controls autoplay></audio>
+    <!-- A maioria dos navegadores só aceita os formatos de arquivo de áudio MP3, OGG e WAV -->
+
+    <audio preload="metadata" controls>
+        <source src="midia/audio-ytb.mp3" type="audio/mpeg">
+        <source src="midia/audio-ytb.ogg" type="audio/ogg">
+        <source src="midia/audio-ytb.wav" type="audio/wav">
+        <p>Seu navegador não suporta o elemento de áudio.
+        <a href="midia/audio-ytb.mp3">Clique aqui para baixar o arquivo de áudio.</a>
+        </p>
+    </audio>
+
+      <h1>Reproduzindo Vídeo</h1>
+    <p>Vamos aprender a reproduzir um arquivo de vídeo usando a tag <code>&lt;video&gt;</code> do HTML 5. O código abaixo inclui um arquivo de vídeo e controles para reprodução:</p>
+    <video src="midia/video-ytb.mp4" controls autoplay></video>
+</body>
+</html>

@@ -1,0 +1,197 @@
+@charset "UTF-8"; /* Regra para definir a codificação de caracteres do arquivo CSS */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); /* Importação de uma fonte personalizada do Google Fonts para ser usada no site, garantindo uma aparência única e estilizada. A fonte "Bebas Neue" é conhecida por seu estilo moderno e impactante, ideal para títulos e destaques. */
+
+@font-face {
+    font-family: Android; /* Define o nome da fonte personalizada que será usada no site */
+    src: url(../pacote-projeto-d010/fontes/idroid.otf) format('opentype'); /* Especifica o caminho para o arquivo de fonte e seu formato, permitindo que a fonte seja carregada e utilizada no site */
+    font-weight: normal;
+}
+
+/* Paleta de cores usadas #c5ebd6 #83e1ad #3ddc84|#2fa866|#1a5c37|#063d1e */
+
+
+:root { /* Variáveis de cores para facilitar a manutenção do código e garantir consistência visual */
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif; /* Variável para a fonte padrão do site, garantindo consistência tipográfica */
+    --fonte-destaque: 'Bebas Neue', cursive; /* Variável para a fonte de destaque, utilizada em títulos e elementos que precisam chamar mais atenção */
+    --font-android: Android, sans-serif; /* Variável para a fonte personalizada do Android, garantindo que o site tenha uma identidade visual única e relacionada ao tema */
+}
+
+/* Estilos gerais */
+* {
+    margin: 0; /* Remove as margens padrão de todos os elementos */
+    padding: 0; /* Remove o preenchimento padrão de todos os elementos */
+    box-sizing: border-box; /* Define o modelo de caixa para incluir bordas e preenchimento no tamanho total do elemento */
+}
+header {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5)); /* Define a cor de fundo do cabeçalho usando a variável de cor definida */
+    min-height: auto;
+    padding-top: 40px; /* Adiciona um preenchimento interno ao cabeçalho para criar espaço ao redor do conteúdo */
+    text-align: center; /* Centraliza o texto dentro do cabeçalho */
+}
+header h1 {
+    font-family: var(--fonte-destaque); /* Aplica a fonte de destaque aos títulos do cabeçalho */
+    color: white; /* Define a cor do texto dos títulos do cabeçalho usando a variável de cor definida */
+    font-size: 3em; /* Define o tamanho da fonte dos títulos do cabeçalho para torná-los mais proeminentes e atraentes */
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.250); /* Adiciona uma sombra ao redor dos títulos do cabeçalho para criar um efeito de profundidade e destacar ainda mais o texto */
+    font-weight: normal; /* Define o peso da fonte dos títulos do cabeçalho como normal para evitar que sejam exibidos em negrito, mantendo a aparência elegante e moderna da fonte de destaque */  
+}
+header p {
+    color: white; /* Define a cor do texto dos parágrafos do cabeçalho usando a variável de cor definida */
+    font-size: 1.2em; /* Define o tamanho da fonte dos parágrafos do cabeçalho para melhorar a legibilidade */
+    font-family: var(--fonte-padrao); /* Aplica a fonte padrão aos parágrafos do cabeçalho */
+    margin: auto; /* Centraliza os parágrafos do cabeçalho horizontalmente */
+    max-width: 600px; /* Define uma largura máxima para os parágrafos do cabeçalho, garantindo que o texto não se estenda demais em telas maiores e mantendo uma boa legibilidade */
+    padding-right: 20px; /* Adiciona um preenchimento à direita aos parágrafos do cabeçalho */
+    padding-left: 20px; /* Adiciona um preenchimento à esquerda aos parágrafos do cabeçalho */
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.350); /* Adiciona uma sombra ao redor dos parágrafos do cabeçalho para criar um efeito de profundidade e destacar o texto, melhorando a legibilidade contra o fundo do cabeçalho */
+}
+nav {
+    background-color: var(--cor5);
+    padding: 10px; /* Adiciona um preenchimento interno à barra de navegação para criar espaço ao redor dos links */
+    box-shadow: 0 7px 7px rgba(0, 0, 0, 0.163);
+}
+nav ul {
+    color: white; /* Define a cor do texto dos links de navegação usando a variável de cor definida */
+    text-decoration: none; /* Remove o sublinhado dos links de navegação para um visual mais limpo */
+    padding: 10px; /* Adiciona um preenchimento interno aos links de navegação para criar espaço ao redor do texto */
+    font-family: var(--fonte-padrao); /* Aplica a fonte padrão aos links de navegação para garantir consistência tipográfica */
+    display: flex;
+    list-style: none; /* Remove os marcadores de lista dos itens de navegação para um visual mais limpo */   
+}
+nav a {
+    color: white; /* Define a cor do texto dos links de navegação usando a variável de cor definida */
+    text-decoration: none; /* Remove o sublinhado dos links de navegação para um visual mais limpo */
+    padding: 10px; /* Adiciona um preenchimento interno aos links de navegação para criar espaço ao redor do texto */
+    font-family: var(--fonte-padrao); /* Aplica a fonte padrão aos links de navegação para garantir consistência tipográfica */
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave para a mudança de cor de fundo ao passar o mouse sobre os links de navegação, melhorando a interatividade e a experiência do usuário */
+}
+nav a:hover {
+    background-color: var(--cor3); /* Define a cor de fundo dos links de navegação ao passar o mouse sobre eles usando a variável de cor definida, criando um efeito visual que indica que o link é interativo */
+    color: white; /* Mantém a cor do texto dos links de navegação como branco ao passar o mouse sobre eles para garantir boa legibilidade contra o novo fundo */
+    transition: background-color .5s ease; /* Adiciona uma transição suave para a mudança de cor de fundo ao passar o mouse sobre os links de navegação, melhorando a interatividade e a experiência do usuário */
+}
+body {
+    background-color: var(--cor2); /* Define a cor de fundo do corpo da página */
+    font-family: var(--fonte-padrao); /* Define a fonte para o texto da página */
+}
+a.externo::after {
+    content: " (link externo)"; /* Adiciona um texto indicando que o link é externo após o conteúdo do link */
+    content: '\0020(🔗)'; /* Adiciona um ícone de link após o conteúdo do link para indicar visualmente que é um link externo, melhorando a experiência do usuário e a usabilidade do site */
+}
+main {
+    min-width: 300px; /* Define uma largura mínima para o elemento main, garantindo que o conteúdo seja exibido corretamente mesmo em telas menores */
+    max-width: 1200px; /* Define uma largura máxima para o elemento main, evitando que o conteúdo se estenda demais em telas maiores e mantendo uma boa legibilidade */
+    margin: 20px auto; /* Centraliza o elemento main horizontalmente e adiciona uma margem superior e inferior de 20px para criar espaço ao redor do conteúdo */
+    background-color: white;
+    padding: 20px; /* Adiciona um preenchimento interno ao elemento main para criar espaço ao redor do conteúdo */
+}
+main h1 {
+    color: var(--cor5);
+    font-family: var(--font-android);
+    font-weight: 100; /* Define o peso da fonte dos títulos de primeiro nível como leve para criar um contraste visual com os títulos de segundo nível e manter a aparência elegante e moderna da fonte personalizada */
+}
+main h2 {
+    color: var(--cor4);
+    font-family: var(--font-android);
+    font-size: 1.3em; /* Define o tamanho da fonte dos títulos de segundo nível para torná-los mais proeminentes e facilitar a hierarquia visual do conteúdo */
+    font-weight: normal; /* Define o peso da fonte dos títulos de segundo nível como normal para evitar que sejam exibidos em negrito, mantendo a aparência elegante e moderna da fonte de destaque */
+    background-image: linear-gradient(to right, var(--cor1), transparent); /* Adiciona um fundo gradiente aos títulos de segundo nível para destacá-los visualmente e criar um efeito atraente */
+    text-indent: 8px; /* Adiciona um recuo na primeira linha dos títulos de segundo nível para criar um estilo de formatação mais tradicional e melhorar a legibilidade */
+}
+main p {
+    font-size: 1.1em; /* Define o tamanho da fonte dos parágrafos para melhorar a legibilidade */
+    line-height: 1.6; /* Define a altura da linha dos parágrafos para melhorar a legibilidade e criar um espaçamento adequado entre as linhas de texto */
+    margin: 15px 0px; /* Adiciona uma margem inferior aos parágrafos para criar espaço entre eles e outros elementos, melhorando a organização visual do conteúdo */
+    text-align: justify; /* Justifica o texto dos parágrafos para criar um alinhamento uniforme nas margens esquerda e direita, melhorando a aparência do texto e a legibilidade */
+    text-indent: 30px; /* Adiciona um recuo na primeira linha dos parágrafos para criar um estilo de formatação mais tradicional e melhorar a legibilidade */
+}
+main strong {
+    color: var(--cor4);
+    font-weight: bold; /* Garante que o texto dentro da tag strong seja exibido em negrito, destacando-o do restante do texto para chamar a atenção do leitor */
+}
+main a {
+    color: var(--cor5); /* Define a cor dos links dentro do elemento main usando a variável de cor definida, garantindo que os links se destaquem do restante do texto e sejam facilmente identificáveis como interativos */
+    text-decoration: none; /* Remove o sublinhado dos links dentro do elemento main para um visual mais limpo e moderno */
+    transition: color 0.3s ease; /* Adiciona uma transição suave para a mudança de cor ao passar o mouse sobre os links, melhorando a interatividade e a experiência do usuário */
+    background-color: var(--cor1); /* Define a cor de fundo dos links dentro do elemento main usando a variável de cor definida, criando um contraste visual que destaca os links e os torna mais atraentes para os usuários */
+    padding: 2px 6px; /* Adiciona um preenchimento interno aos links dentro do elemento main para criar espaço ao redor do texto, melhorando a legibilidade e a aparência dos links */
+}
+main a:hover {
+    color: var(--cor0); /* Define a cor dos links dentro do elemento main ao passar o mouse sobre eles usando a variável de cor definida, criando um efeito visual que indica que o link é interativo e melhorando a experiência do usuário */
+    background-color: var(--cor3); /* Define a cor de fundo dos links dentro do elemento main ao passar o mouse sobre eles usando a variável de cor definida, criando um contraste visual que destaca os links e os torna mais atraentes para os usuários */
+    transition: color 0.3s ease; /* Adiciona uma transição suave para a mudança de cor ao passar o mouse sobre os links, melhorando a interatividade e a experiência do usuário */
+    text-decoration: underline; /* Adiciona um sublinhado aos links dentro do elemento main ao passar o mouse sobre eles para indicar que são interativos, melhorando a experiência do usuário e a usabilidade do site */
+}
+main img {
+    max-width: 100%; /* Garante que as imagens dentro do elemento main não excedam a largura do contêiner, mantendo a responsividade */
+    height: auto; /* Mantém a proporção original das imagens ao redimensioná-las */
+    display: block; /* Remove o espaço em branco abaixo das imagens, garantindo um layout mais limpo */
+    margin: 10px 0; /* Adiciona uma margem vertical de 10px acima e abaixo das imagens para criar espaço entre elas e outros elementos */
+}
+main img.pequena {
+    max-width: 350px; /* Define uma largura fixa para as imagens com a classe "pequena", garantindo que elas sejam exibidas em um tamanho consistente, independentemente do tamanho original da imagem */
+    display: block; /* Remove o espaço em branco abaixo das imagens, garantindo um layout mais limpo */
+    margin: 10px auto; /* Centraliza as imagens com a classe "pequena" horizontalmente */
+    align-items: center;
+}
+div.video {
+    background-color: var(--cor1); /* Define a cor de fundo do contêiner de vídeo usando a variável de cor definida, criando um contraste visual que destaca o vídeo em relação ao restante do conteúdo */
+    display: flex; /* Define o contêiner de vídeo como um flex container para facilitar o alinhamento e a organização dos elementos dentro dele */
+    justify-content: center; /* Centraliza os elementos dentro do contêiner de vídeo horizontalmente, garantindo que o vídeo fique centralizado na página */
+    margin: 0px 0px -20px 0px ; /* Adiciona uma margem vertical de 20px acima e abaixo do contêiner de vídeo para criar espaço entre ele e outros elementos, melhorando a organização visual do conteúdo */
+    padding: 10px; /* Adiciona um preenchimento interno ao contêiner de vídeo para criar espaço ao redor do conteúdo, melhorando a legibilidade e a aparência geral do contêiner de vídeo */
+    position: relative;
+    padding-bottom: 59%; /* Define o preenchimento inferior do contêiner de vídeo como 0% para garantir que o vídeo seja exibido corretamente sem adicionar espaço extra abaixo dele */
+}
+div.video iframe {
+    width: 95%; /* Define a largura do iframe para ocupar toda a largura do contêiner de vídeo, garantindo que o vídeo seja exibido em um tamanho responsivo e se ajuste ao tamanho do contêiner */
+    height: 95%; /* Define a altura do iframe para ocupar toda a altura do contêiner de vídeo, garantindo que o vídeo seja exibido em um tamanho responsivo e se ajuste ao tamanho do contêiner */
+    position: absolute; /* Define o iframe como um elemento posicionado absolutamente dentro do contêiner de vídeo, permitindo que ele seja centralizado verticalmente */
+}
+aside {
+    background-color: var(--cor1); /* Define a cor de fundo do elemento aside usando a variável de cor definida, criando um contraste visual que destaca o conteúdo do aside em relação ao restante da página */
+    padding: 10px; /* Adiciona um preenchimento interno ao elemento aside para criar espaço ao redor do conteúdo, melhorando a legibilidade e a aparência geral do aside */
+    margin-top: 20px; /* Adiciona uma margem superior ao elemento aside para criar espaço entre ele e os elementos anteriores, melhorando a organização visual do conteúdo */
+    border-radius: 5px; /* Adiciona bordas arredondadas ao elemento aside para um visual mais suave e moderno */
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281); /* Adiciona uma sombra ao redor do elemento aside para criar um efeito de profundidade e destacar o aside em relação ao restante da página */
+}
+aside h3 {
+    background-color: var(--cor5); /* Define a cor do texto dos títulos dentro do elemento aside usando a variável de cor definida, garantindo que os títulos se destaquem do restante do texto e sejam facilmente identificáveis como seções importantes dentro do aside */
+    color: white; /* Define a cor do texto dos títulos dentro do elemento aside usando a variável de cor definida, garantindo que os títulos se destaquem do restante do texto e sejam facilmente identificáveis como seções importantes dentro do aside */
+    padding: 10px; /* Adiciona um preenchimento inferior aos títulos dentro do elemento aside para criar espaço entre os títulos e o conteúdo subsequente, melhorando a organização visual do conteúdo */
+    margin: -10px -10px 0px -10px; /* Remove a margem superior e as margens laterais dos títulos dentro do elemento aside para alinhar os títulos com as bordas do aside, criando um layout mais coeso e organizado */
+    border-radius: 10px 10px 0px 0px; /* Adiciona bordas arredondadas apenas na parte superior dos títulos dentro do elemento aside para criar um visual mais interessante e diferenciado, destacando os títulos como se fossem uma espécie de "cabeçalho" para as seções do aside */
+}
+aside ul {
+    list-style-position: inside; /* Remove os marcadores de lista dos itens dentro do elemento aside para um visual mais limpo */
+    padding-left: 20px; /* Adiciona um preenchimento à esquerda aos itens de lista dentro do elemento aside para criar um recuo e melhorar a organização visual do conteúdo */
+    columns: 2; /* Divide os itens de lista dentro do elemento aside em duas colunas para melhorar a legibilidade e a organização visual do conteúdo, especialmente quando há muitos itens na lista */
+    line-height: 1.5; /* Define a altura da linha dos itens de lista dentro do elemento aside para melhorar a legibilidade e criar um espaçamento adequado entre as linhas de texto */
+    list-style-type: '\2714\0020'; /* Define um marcador de lista personalizado usando um símbolo de marca de seleção (✔) para os itens dentro do elemento aside, criando um visual mais atraente e temático para a lista */
+}
+footer {
+    background-color: var(--cor5); /* Define a cor de fundo do rodapé usando a variável de cor definida */
+    color: white; /* Define a cor do texto do rodapé usando a variável de cor definida */
+    text-align: center; /* Centraliza o texto dentro do rodapé */
+    padding: 5px; /* Adiciona um preenchimento interno ao rodapé para criar espaço ao redor do conteúdo */
+    font-size: 0.8em; /* Define o tamanho da fonte do rodapé para torná-lo menor e menos proeminente em relação ao restante do conteúdo, mantendo a legibilidade */
+}
+footer a {
+    color: white; /* Define a cor dos links dentro do rodapé usando a variável de cor definida, garantindo que os links se destaquem do restante do texto e sejam facilmente identificáveis como interativos */
+    text-decoration: none; /* Remove o sublinhado dos links dentro do rodapé para um visual mais limpo e moderno */
+    transition: color 0.3s ease; /* Adiciona uma transição suave para a mudança de cor ao passar o mouse sobre os links, melhorando a interatividade e a experiência do usuário */
+    background-color: var(--cor5); /* Define a cor de fundo dos links dentro do rodapé usando a variável de cor definida, criando um contraste visual que destaca os links e os torna mais atraentes para os usuários */
+}
+footer a:hover {
+    color: white; /* Define a cor dos links dentro do rodapé ao passar o mouse sobre eles usando a variável de cor definida, criando um efeito visual que indica que o link é interativo e melhorando a experiência do usuário */
+    background-color: var(--cor3); /* Define a cor de fundo dos links dentro do rodapé ao passar o mouse sobre eles usando a variável de cor definida, criando um contraste visual que destaca os links e os torna mais atraentes para os usuários */
+    text-decoration: underline; /* Adiciona um sublinhado aos links dentro do rodapé ao passar o mouse sobre eles para indicar que são interativos, melhorando a experiência do usuário e a usabilidade do site */
+}

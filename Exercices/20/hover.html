@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        div {
+            background-color: lightgrey;
+            border: 1px solid black;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+        }
+        div:hover {
+            background-color: lightblue;
+        }
+        div:hover > p {
+            display: block;
+            color: white;
+            background-color: red;
+        }
+        div p {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso do Hover</h1>
+    <p>Passe o mouse sobre o quadrado para ver o efeito de hover.</p>
+    <div>Passe o mouse sobre mim para mudar minha cor de fundo!
+        <p>Parabéns voce me achou!</p>
+    </div>
+    <p>Final do exemplo</p>
+</body>
+</html>

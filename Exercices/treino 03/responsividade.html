@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsividade</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: gray;
+        }
+        main {
+            padding: 20px;
+            border-radius: 10px;
+            min-width: 300px; /* responsividade largura minima para varias telas*/
+            max-width: 800px; /* responsividade largura maxima para varias telas*/
+            margin: 0 auto;
+            background-color: white;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <main>
+    <h1>Teste de Responsividade</h1>
+    <p>Responsividade é a capacidade de um site ou aplicativo se adaptar a diferentes tamanhos de tela e dispositivos, proporcionando uma experiência de usuário consistente e agradável. Com o aumento do uso de dispositivos móveis, a responsividade tornou-se essencial para garantir que os usuários possam acessar e interagir com o conteúdo de forma eficiente, independentemente do dispositivo que estejam usando.</p>
+    <p>Um design responsivo utiliza técnicas como media queries, flexbox e grid para ajustar o layout, as imagens e os elementos de navegação de acordo com o tamanho da tela. Isso significa que um site responsivo pode ser visualizado em um desktop, tablet ou smartphone sem perder a funcionalidade ou a estética.</p>
+    <p>Além disso, a responsividade também é importante para o SEO (Search Engine   Optimization), pois os motores de busca, como o Google, favorecem sites que oferecem uma boa experiência em dispositivos móveis. Portanto, investir em um design responsivo é fundamental para alcançar um público mais amplo e garantir o sucesso online.</p>
+    <picture> <!-- O elemento picture é usado para fornecer diferentes versões de uma imagem com base nas condições do dispositivo, como largura da tela ou resolução. Ele permite que os desenvolvedores ofereçam imagens otimizadas para diferentes dispositivos, melhorando a performance e a experiência do usuário. -->
+        <source media="(max-width: 600px)" srcset=" pacote-projeto-d010/imagens/irina-blok-pq.jpg"> <!-- A tag source é usada dentro do elemento picture para definir diferentes fontes de imagem com base em condições específicas, como a largura da tela. No exemplo, a imagem "irina-blok-pq.jpg" será exibida quando a largura da tela for de no máximo 600 pixels, proporcionando uma versão otimizada para dispositivos móveis. -->
+        <source media="(min-width: 300px)" srcset=" pacote-projeto-d010/imagens/irina-blok.jpg"> <!-- A tag source é usada dentro do elemento picture para definir diferentes fontes de imagem com base em condições específicas, como a largura da tela. No exemplo, a imagem "irina-blok.jpg" será exibida quando a largura da tela for de no mínimo 300 pixels, proporcionando uma versão otimizada para dispositivos maiores, como desktops e tablets. -->
+        <img src="pacote-projeto-d010/imagens/irina-blok.jpg" alt="Irina Blok" title="Irina Blok, a ilustradora do Bugdroid"></picture>
+    <p>Responsividade é a capacidade de um site ou aplicativo se adaptar a diferentes tamanhos de tela e dispositivos, proporcionando umexperiência de usuário consistente e agradável. Com o aumento do uso de dispositivos móveis, a responsividade tornou-se essencial para garantir que os usuários possam acessar e interagir com o conteúdo de forma eficiente, independentemente do dispositivo que estejam usando.</p>
+    <p>Um design responsivo utiliza técnicas como media queries, flexbox e grid para ajustar o layout, as imagens e os elementos de navegação de acordo com o tamanho da tela. Isso significa que um site responsivo pode ser visualizado em um desktop, tablet ou smartphone sem perder a funcionalidade ou a estética.</p>
+    <p>Além disso, a responsividade também é importante para o SEO (Search Engine   Optimization), pois os motores de busca, como o Google, favorecem sites que oferecem uma boa experiência em dispositivos móveis. Portanto, investir em um design responsivo é fundamental para alcançar um público mais amplo e garantir o sucesso online.</p>
+    </main>
+</body>
+</html>

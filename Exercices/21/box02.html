@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags | Tags de Agrupamento</title>
+    <style>
+        body
+        {
+            font-family: Arial, sans-serif;
+            /* Define a fonte para o corpo do documento */
+            background-color: dimgray;
+                /* Define a cor de fundo para o corpo do documento */
+                color: white;
+                /* Define a cor do texto para o corpo do documento */
+        }
+        header /* Seleciona a tag de cabeçalho */
+        {
+            width: 600px;
+            /* Define a largura para o cabeçalho */
+            margin: 20px auto;
+            /* Define a margem para o cabeçalho */
+            background-color: black;
+            /* Define a cor de fundo para o cabeçalho */
+            color: white;
+            /* Define a cor do texto para o cabeçalho */
+            padding: 20px;
+            /* Define o preenchimento para o cabeçalho */
+            text-align: center;
+            /* Define o alinhamento do texto para o cabeçalho */
+            border-radius: 10px 40px;
+            /* Define o raio da borda para o cabeçalho */
+        }
+        nav /* Seleciona a tag de navegação */
+        {
+            list-style-type: none;
+            /* Remove os marcadores da lista */
+            padding: 0;
+            /* Remove o preenchimento da lista */
+        }
+        nav ul /* Seleciona a lista não ordenada dentro da navegação */
+        {
+            display: flex;
+            /* Exibe os itens da lista em linha */
+            justify-content: center;
+            /* Centraliza os itens da lista */
+            gap: 20px;
+            /* Define o espaço entre os itens da lista */
+        }
+        nav > a /* Seleciona os links de navegação que são filhos diretos da navegação */
+        {
+            color: white;
+            /* Define a cor do texto para os links de navegação */
+            text-decoration: none;
+            /* Remove o sublinhado dos links de navegação */
+        }
+        nav > a:hover /* Seleciona os links de navegação ao passar o mouse sobre eles */
+        {
+            text-decoration: underline;
+            /* Adiciona um sublinhado aos links de navegação ao passar o mouse sobre eles */
+        }
+        main /* Seleciona a tag principal */
+        {
+            width: 600px;
+            /* Define a largura para o conteúdo principal */
+            margin: 20px auto;
+            /* Define a margem para o conteúdo principal */
+            background-color: black;
+            /* Define a cor de fundo para o conteúdo principal */
+            color: white;
+            /* Define a cor do texto para o conteúdo principal */
+            padding: 20px;
+            /* Define o preenchimento para o conteúdo principal */
+            border-radius: 10px 40px;
+            /* Define o raio da borda para o conteúdo principal */
+        }
+        article /* Seleciona a tag de artigo */
+        {
+            background-color: dimgray;
+            margin-bottom: 20px;
+            /* Define a margem inferior para os artigos */
+        }
+        article > aside /* Seleciona o aside que é filho direto do article */
+        {
+            background-color: gray;
+            padding: 10px;
+            /* Define o preenchimento para o aside dentro do artigo */
+            margin-top: 10px;
+            /* Define a margem superior para o aside dentro do artigo */
+        }
+        footer /* Seleciona a tag de rodapé */
+        {
+            width: 600px;
+            /* Define a largura para o rodapé */
+            margin: 20px auto;
+            /* Define a margem para o rodapé */
+            background-color: black;
+            /* Define a cor de fundo para o rodapé */
+            color: white;
+            /* Define a cor do texto para o rodapé */
+            padding: 10px;
+            /* Define o preenchimento para o rodapé */
+            text-align: center;
+            /* Define o alinhamento do texto para o rodapé */
+            border-radius: 10px 40px;
+        }
+        footer > p /* Seleciona o parágrafo que é filho direto do rodapé */
+        {
+            margin: 0;
+            /* Remove a margem do parágrafo dentro do rodapé */
+        }
+    </style>
+</head>
+<body>
+    <header> <!--Cabeçalho-->
+        <h1>Meu Portfólio</h1> <!--Título principal do site-->
+        <nav> <!--Navegação-->
+            <ul> <!--Lista não ordenada-->
+                <li><a href="#">Início</a></li> <!--Lista de itens-->
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main> <!--Conteúdo principal-->
+        <section id="sobremim"> <!--Seção do conteúdo principal-->
+            <h2>Sobre Mim</h2>
+            <p>Olá! Meu nome é Mateus Inácio e sou um desenvolvedor web apaixonado por criar experiências digitais incríveis. Tenho experiência em HTML, CSS, JavaScript e várias outras tecnologias de desenvolvimento web.</p>
+        </section>
+        <section id="projetos"> <!--Outra seção do conteúdo principal-->
+            <article> <!--Artigo dentro da seção-->
+                <aside> <!--Conteúdo relacionado, mas separado do fluxo principal-->
+                    <h3>Projeto Destacado</h3>
+                    <p>Confira meu projeto mais recente, um site de portfólio interativo que desenvolvi usando HTML, CSS e JavaScript.</p>
+                    <a href="https://meu-projeto-portfolio.com" target="_blank">Visitar Projeto</a>
+                </aside>                
+            </article>
+            <article> <!--Outro artigo dentro da seção-->
+                <h2>Contato</h2>
+                <p>Entre em contato comigo através dos seguintes canais:</p>
+                <ul>
+                    <li><a href="mailto:mateus.inacio@example.com">Email</a></li>
+                    <li><a href="https://www.linkedin.com/in/mateus-inacio" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://github.com/mateus-inacio" target="_blank">GitHub</a></li>
+                </ul>
+            </article>
+        </section>
+    </main>
+    <footer> <!--Rodapé-->
+        <p>&copy; 2026 Desenvolvido pelo Mateus Inácio. Todos os direitos reservados.</p>
+    </footer>
+<!-- <div> é uma tag de nível de caixa (block-level) -->
+<!-- <span> é uma tag de nível de linha (inline-level) -->
+</body>
+</html>

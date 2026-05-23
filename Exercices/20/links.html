@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /* Seletores CSS Personalizados:
+        # = id
+        . = class
+        : = pseudo-classe
+        :: = pseudo-elemento
+        > = filho direto
+        + = irmão adjacente
+        */
+
+
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        a {
+            color: blue;
+            text-decoration: underline;
+        }
+        a:visited {
+            color: purple;
+            font-weight: bold;
+        }
+        a:hover {
+            color: red;
+            text-decoration: none;
+        }
+        a:active {
+            color: orange;
+            text-decoration: none;
+        }
+        .special {
+            background-color: rgba(63, 169, 230, 0.323);
+        }
+        a:after {
+            content: " (link externo)";
+            font-size: 0.8em;
+            color: grey;
+        }
+        a.special:after {
+            content: " (link especial)";
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <p>Este é um exemplo de como personalizar links usando CSS.</p>
+    <ul>
+        <li><a href="https://www.google.com" target="_blank">Google</a></li>
+        <li><a href="https://www.github.com" target="_blank">GitHub</a></li>
+        <li><a href="https://www.stackoverflow.com" target="_blank" class="special">Stack Overflow</a></li>
+    </ul>
+</body>
+</html>
