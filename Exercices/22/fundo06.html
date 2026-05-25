@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicio Fundo 06</title>
+    <title>Dicas e Aprendizado -Background</title>
     <style>
         *
         {
@@ -13,19 +13,22 @@
         }
         body
         {
+            /*Short-Hands - Background
+             ORDEM: color > image > position > repeat > [size] > attachment
+            */
             height: 100vh;
-            background-color: #000;
             font-family: Arial, Helvetica, sans-serif;
-            background-image: url('imagens/wallpaper002.jpg');
-            background-position: center center;
-            background-size: no-repeat;
-            background-size: cover; 
-            /*cover ajusta a imagem para cobrir todo o fundo */
+
+            background: #000 url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+             /*background é uma propriedade de atalho que permite definir várias propriedades de fundo em uma única linha. 
+             A ordem das propriedades é importante, e a sintaxe correta é: background: [color] [image] [position] [repeat] [attachment];*/
+             /*no-repeat é usado para evitar que a imagem se repita*/
+             /*fixed fixa a imagem no fundo, mesmo quando a página é rolada*/
         }
         main
         {
             background-color: #fff;
-            width: 400px; /*largura*/
+            max-width: 400px; /*largura*/
             padding: 20px; /*espaçamento interno*/
             margin: 20px auto; /*centralização  */
             border: 2px solid #000; /*borda*/
@@ -35,11 +38,20 @@
 </head>
 <body>
     <main>
-        <h1>Exercicio Fundo 06</h1>
+        <h1>Aprendendo a usar Background</h1>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis quasi labore nostrum itaque mollitia aliquid unde libero saepe id dolores tempora placeat obcaecati sit commodi totam autem error, eligendi harum!
         Odio, quisquam expedita accusantium rerum dolores nemo assumenda suscipit quaerat aspernatur ad animi fuga, soluta culpa rem excepturi quasi quis doloribus. Incidunt recusandae, autem corporis quam dolor deleniti natus culpa?</p>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore et enim sapiente, iure, fugit molestias incidunt quas consectetur, iste ex saepe libero impedit quidem veritatis placeat vel eaque maiores asperiores!
         Necessitatibus illo odit ratione fugiat! Nobis, numquam quod? Cumque officiis voluptatem magni quod ex tempore temporibus labore id eligendi exercitationem, laborum rerum quas ratione vitae placeat veritatis dignissimos rem quibusdam?
+        Accusantium quam quo qui at quasi alias perspiciatis temporibus numquam minus? Aut molestias odio voluptatum, aliquam quasi ntium voluptatum dolorum labore numquam sit aliquid iste. Voluptatem inventore qu
+        Quos mollitia culpa doloremque explicabo suscipit deleniti dicta aliquam dolorem adipisci molestiae harum voluptate, laboriosam nisi necessitatibus
+        e id eligendi exercitationem, laborum rerum quas ratione vitae placeat veritatis dignissimos rem quibusdam?
+        Accusantium quam quo qui at quasi alias perspiciatis temporibus numquam minus? Aut molestias odio voluptatum, aliquam quasi ntium voluptatum dolorum labore numquam sit aliquid iste. Voluptatem inventore qu
+        Quos mollitia culpa doloremque explicabo suscipit deleniti dicta aliquam dolorem adipisci molestiae harum voluptate, laboriosam nisi necessitatibus 
+        e id eligendi exercitationem, laborum rerum quas ratione vitae placeat veritatis dignissimos rem quibusdam?
+        Accusantium quam quo qui at quasi alias perspiciatis temporibus numquam minus? Aut molestias odio voluptatum, aliquam quasi ntium voluptatum dolorum labore numquam sit aliquid iste. Voluptatem inventore qu
+        Quos mollitia culpa doloremque explicabo suscipit deleniti dicta aliquam dolorem adipisci molestiae harum voluptate, laboriosam nisi necessitatibus 
+        e id eligendi exercitationem, laborum rerum quas ratione vitae placeat veritatis dignissimos rem quibusdam?
         Accusantium quam quo qui at quasi alias perspiciatis temporibus numquam minus? Aut molestias odio voluptatum, aliquam quasi ntium voluptatum dolorum labore numquam sit aliquid iste. Voluptatem inventore qu
         Quos mollitia culpa doloremque explicabo suscipit deleniti dicta aliquam dolorem adipisci molestiae harum voluptate, laboriosam nisi necessitatibus architecto minima reprehenero quisquam id eum sapiente maiores dolore, tenetur dolores tempora nulla!</p>
     </main>
