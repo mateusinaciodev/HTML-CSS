@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        *
+        {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body
+        {
+            background-color: lightgray;
+        }
+
+        h1
+        {
+            padding: 10px;
+        }
+
+        table
+        {
+            border-collapse: collapse;
+            width: 300px;
+            padding: 10px;
+        }
+
+        td
+        {
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mesclagem de Células</h1>
+        <table>
+            <tr>
+                <td>A</td>
+                <td colspan="2">B</td>
+                <!--usamos colspan para que uma linha ocupe todo o espaço horizontal disponivel caso falte algum dado-->
+            </tr>
+            <tr>
+                <td>D</td>
+                <td rowspan="2">E</td>
+                <td rowspan="2">F</td>
+                <!--usamos o rowspan para preencher verticalmente dados vazios-->
+            </tr>
+            <tr>
+                <td>I</td>
+            </tr>
+            <tr>
+                <td colspan="3">M</td>
+            </tr>
+        </table>
+    
+</body>
+</html>
