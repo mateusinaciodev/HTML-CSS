@@ -47,13 +47,49 @@
         {
             border: 2px solid black;
             padding: 8px;
-        } 
+        }
 
+        .cnome
+        {
+            background-color: rgb(242, 203, 151);
+        }
+
+        .csexo
+        {
+            background-color: cornflowerblue;
+        }
+
+        .cgrupo
+        {
+            background-color: darkmagenta;
+        }
+
+        .preto
+        {
+            background-color: black;
+        }
+
+        .branco
+        {
+            background-color: white;
+        }
     </style>
 </head>
 <body>
     <h1>Trabalhando com Tabelas</h1>
     <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cgrupo" span="2">
+            <!--aqui conseguimos atacar duas tabelas com o cgrupo e o span="2" no css-->
+        </colgroup>
+        <colgroup>
+            <col class="preto">
+            <col class="branco">
+            <col class="preto">
+            <col class="branco">
+        </colgroup>
         <caption>Cadastro</caption>
         <thead>
             <tr>
@@ -69,6 +105,36 @@
                 <td>Feminino</td>
                 <td>25</td>
                 <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Cláudio</td>
+                <td>Masculino</td>
+                <td>28</td>
+                <td>Programador</td>
+            </tr>
+            <tr>
+                <td>Gustavo</td>
+                <td>Masculino</td>
+                <td>42</td>
+                <td>Professor</td>
+            </tr>
+            <tr>
+                <td>Hélio</td>
+                <td>Masculino</td>
+                <td>19</td>
+                <td>Vendedor</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>Feminino</td>
+                <td>39</td>
+                <td>Médica</td>
+            </tr>
+            <tr>
+                <td>Otávio</td>
+                <td>Masculino</td>
+                <td>22</td>
+                <td>Nutricionista</td>
             </tr>
         </tbody>
     </table>
