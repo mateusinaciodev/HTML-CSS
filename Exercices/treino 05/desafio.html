@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro Desafio</title>
+    <style>
+        *
+        {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body
+        {
+            background-color: rgb(0, 0, 0);
+        }
+
+        h1
+        {
+            padding: 10px;
+            text-align: center;
+            background-color: rgb(0, 0, 0);
+            color: white;
+        }
+
+        table
+        {
+            border-collapse: separate;
+            margin: auto;
+            width: 300px;
+            background-color: white;
+        }
+
+        tr, td
+        {
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        td:nth-child(odd):hover 
+        /*ao passsar o mouse deixa o fundo dos numeros impares roxo*/
+        {
+            background-color: purple;
+        }
+
+        td:nth-child(even):hover
+         /*ao passsar o mouse deixa o fundo dos numeros pares laranja*/
+        {
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <h1>Desafio</h1>
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td rowspan="2">3</td>
+            <td colspan="4">4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td rowspan="2" colspan="2">8</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td rowspan="2">10</td>
+            <td rowspan="2">11</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+        </tr>
+    </table>
+</body>
+</html>
