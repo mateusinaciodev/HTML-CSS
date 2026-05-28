@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 2</title>
+    <style>
+        *
+        {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body
+        {
+            background-color: rgb(0, 0, 0);
+            text-align: center;
+        }
+
+        h1
+        {
+            padding: 10px;
+            background-color: aliceblue;
+            margin: 5px;
+        }
+
+        table
+        {
+            border-collapse: collapse;
+            margin: auto;
+            background-color: aliceblue;
+            width: 500px;
+        }
+
+        caption
+        {
+            font-size: 1.3em;
+            padding: 10px;
+            background-color: aliceblue;
+            font-weight: bold;
+            border: 2px solid black;
+        }
+
+        th, td
+        {
+            border: 2px solid black;
+            padding: 10px;
+        }
+
+        #estilo1
+        {
+            background-color: gray;
+            color: white;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        .estilo1
+        {
+            background-color: gray;
+            color: white;
+            font-weight: bold;
+        }
+
+        .negrito
+        {
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Desafio Final</h1>
+        <table>
+        <caption>Escola do Guanabra</caption>
+        <thead>
+            <tr>
+                <th rowspan="2" class="estilo1">Área</th>
+                <th rowspan="2" class="estilo1">Disciplinas</th>
+                <th colspan="2" class="estilo1">Notas</th>
+                <th rowspan="2" class="estilo1">Média</th>
+            </tr>
+            <tr>
+                <th class="estilo1">Nota 01</th>
+                <th class="estilo1">Nota 02</th>
+            </tr>
+        </thead>
+        <tbody>
+             <tr>
+                <td rowspan="4" class="negrito">Exatas</td>
+                <td>Matemática</td>
+                <td>0,0</td>
+                <td>0,0</td>
+                <td>0,0</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td>0,0</td>
+                <td>0,0</td>
+                <td>0,0</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td>0,0</td>
+                <td>0,0</td>
+                <td>0,0</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>0,0</td>
+                <td>0,0</td>
+                <td>0,0</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4" id="estilo1">Média das Exatas</th>
+                <td class="estilo1">0,0</td>
+                <tr>
+                <td rowspan="2" id="negrito">Humanas</td>
+                <td>História</td>
+                <td>0,0</td>
+                <td>0,0</td>
+                <td>0,0</td>
+                </tr>
+            <tr>
+                <td>Geografia</td>
+                <td>0,0</td>
+                <td>0,0</td>
+                <td>0,0</td>
+            </tr>
+            </tr>
+            <th colspan="4" id="estilo1">Média de Humanas</th>
+            <td class="estilo1">0,0</td>
+        </tfoot>
+    </table>
+</body>
+</html>
