@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendizado sobre iFrames</title>
+    <style>
+        * 
+        {
+            margin: 0px;
+            font-family: Arial, sans-serif;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        iframe 
+        {
+            margin: 10px 0px;
+            border: 2px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aprendizado sobre iFrames</h1>
+    <!--Tamanho Padrão dos iFrames é 300x150px-->
+    <br>
+    <h2>
+        <p>O exemplo de iFrame: é o site do <a href="https://www.cursoemvideo.com" target="_blank">Curso em Video</a> que está me ensinando muitas coisas.</p>
+        <p>O exemplo de iFrame: é o site do
+            <iframe src="https://www.cursoemvideo.com" frameborder="0" width="600" height="400">
+                <!--Existem os parametros no scolling="" o YES, NO e AUTO para controle da rolagem do conteúdo do iFrame-->>
+            <a href="https://www.cursoemvideo.com" target="_blank">Curso em Video</a>
+            </iframe>que está me ensinando muitas coisas.</p>
+        <p>
+            Agora testamos o iFrame do site do youtube, para mostrar um vídeo de um curso de HTML5.
+            <iframe src="https://www.youtube.com/embed/1Rs2ND1ryY" frameborder="0" width="600" height="400" allowfullscreen>
+                <a href="https://www.youtube.com/watch?v=1Rs2ND1ryY" target="_blank">Ver vídeo no YouTube</a>
+            </iframe>
+        </p>
+        <p>
+            Podemos também usar o Github do Gustavo Guanabara para exemplo de iFrame, para mostrar o conteúdo do repositório dele.
+            <iframe src="https://gustavoguanabara.github.io" frameborder="0" width="600" height="400">
+                <a href="https://gustavoguanabara.github.io" target="_blank">Gustavo Guanabara</a>
+                </iframe>
+        </p>
+    </h2>
+    <p>O iFrame é um elemento HTML que permite incorporar outro documento HTML dentro do documento atual. Ele é útil para exibir conteúdo de outras fontes, como vídeos, mapas ou páginas da web, sem precisar redirecionar o usuário para outra página. O iFrame é amplamente utilizado para integrar conteúdo de terceiros em sites, como vídeos do YouTube, mapas do Google Maps ou widgets de redes sociais.</p>
+    <p>Para criar um iFrame, você pode usar a tag <code>&lt;iframe&gt;</code> e especificar o atributo <code>src</code> para indicar a URL do conteúdo que deseja incorporar. Por exemplo:</p>
+    <pre>&lt;iframe src="https://www.example.com" width="600" height="400"&gt;&lt;/iframe&gt;</pre>
+    <p>Neste exemplo, o iFrame irá exibir a página da web "https://www.example.com" com uma largura de 600 pixels e uma altura de 400 pixels. Você também pode ajustar as dimensões do iFrame conforme necessário.</p>
+    <p>Além disso, o iFrame possui outros atributos úteis, como <code>title</code> para fornecer uma descrição do conteúdo, <code>allowfullscreen</code> para permitir que o conteúdo seja exibido em tela cheia, e <code>sandbox</code> para restringir as ações que o conteúdo incorporado pode realizar.</p>
+    <p>É importante lembrar que o conteúdo incorporado em um iFrame pode ter suas próprias regras de segurança e políticas de mesma origem, o que pode limitar a interação entre o documento principal e o conteúdo do iFrame. Portanto, é essencial considerar essas questões ao usar iFrames em seu site.</p>
+</body>
+</html>
