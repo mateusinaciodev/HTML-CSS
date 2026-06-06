@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Usando Formulários</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="inum1" name="number" id="inum1">Número 01:</label>
+            <input type="number" name="number" id="inum1" min="0" max="50" required oninput="isoma.innerHTML = Number(inum1.value) + Number(inum2.value)">
+        </p>
+        <p>
+            <label for="inum2" name="number" id="inum2">Número 02:</label>
+            <input type="number" name="number" id="inum2" min="0" max="50" required oninput="isoma.innerHTML = Number(inum1.value) + Number(inum2.value)">
+        </p>
+        <p>
+            <label for="isoma" name="soma" id="isoma">Soma:</label>
+            <output name="soma" id="isoma">0</output>
+            <!--usamos o OUTPUT para mostrar funções na tela, aqui usamos JS para fazer a soma do num1 e do num2 com o metodo inner.HTMLpara que a soma guarde e imprima na tela o resultado-->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iest" name="est" id="iest">Selecione um Estado:</label>
+            <select name="estado" id="iest">
+                <option value="" selected>---Escolha---</option>
+                <optgroup label="Região Suldeste">
+                    <option value=" MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+                <optgroup label="Região Sul">
+                    <option value="SC">Santa Catarina</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="PR">Paraná</option>
+                </optgroup> 
+                <optgroup label="Região Norte">
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraibá</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+            </select>
+        <p>
+           <label for="iprofi" name="profi" id="iprofi">Profissão:</label>
+           <input type="text" name="profi" id="iprofi" list="listprofi">
+           <datalist id="listprofi">
+            <option>Administrador</option>
+            <option>Engenheiro Mecânico</option>
+            <option>Policial Milital</option>
+            <option>Policial Civil</option>
+            <option>Policial Rodoviario Federal</option>
+            <option>Bombeiro Militar</option>
+            <option>Socorrista</option>
+            <option>Médico</option>
+            <option>Professor</option>
+            <option>Dentista</option>
+           </datalist>
+        </p>
+        <p>
+            <label for="imsg" name="msg" id="imsg">Mensagem:</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Digite aqui o que voce está achando da nossa empresa, ficaremos felizes em ouvir."></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
