@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Aprendizado sobre Formulários</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>   <!--Usamos LEGEND para adicionar uma legenda ao campo do FIELDSET-->
+            <p>
+                <label for="inome" name="nome" id="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" required minlength="5" maxlength="15" placeholder="Digite seu nome aqui">
+            </p>
+            <p>
+                <label for="iemail" name="email" id="iemail">E-mail:<label>
+                <input type="email" name="email" id="iemail" autocomplete="email" required placeholder="exemplo@exemplo.com">
+            </p>
+            <p>
+                <label for="itele" name="tele" id="itele">Telefone:</label>
+                <input type="tel" name="tele" id="itele" autocomplete="tel" required pattern="^\d{4,5}-\d{4}$" placeholder="(xx)xxxxx-xxxx">
+                <!--Estudar sobre Expressões Regulares (RegEx)-->
+            </p>
+        </fieldset>  <!--Usamos o FIELDSET para agrupar campos de inputs de formulários que usuários digitaram-->
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
