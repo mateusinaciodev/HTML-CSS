@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        *
+        {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <!--usamos o radio para selecionar só uma opção, usando no mesmo valor nome no campoo name=""-->
+            <!--usamos o "sexo" no mesmo name="" nesse input radio para que o user nao consiga marcar mais de um sexo-->
+            <input type="radio" name="sexo" id="imasc" value="M"><label for="imasc"> Masculino</label><br>
+            <input type="radio" name="sexo" id="ifem" value="F"><label for="ifem"> Feminino</label><br>
+            <input type="radio" name="sexo" id="ioutros" value="O"><label for="ioutros"> Outros</label><br>
+            <input type="radio" name="sexo" id="inaoinf" value="N"><label for="inaoinf"> Prefiro não informar</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <!--usamos o label for="" na palavra do Esporte que aparecerá ao user para relaciona-lá ao campo de marcação para ajudar os mobile users-->
+            <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label><br>
+            <input type="checkbox" name="esvolei" id="iesvolei"> <label for="iesvolei">Vôlei</label><br>
+            <input type="checkbox" name="esbasq" id="iesbasq"> <label for="iesbasq">Basquete</label><br>
+            <input type="checkbox" name="eshand" id="ieshand"> <label for="ieshand">Handebol</label><br>
+            <input type="checkbox" name="esatleti" id="iesatleti"> <label for="iesatleti">Atletismo</label><br>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
