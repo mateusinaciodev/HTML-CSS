@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible-Box-Model</title>
+    <style>
+        body
+        {
+            background-color: gray;
+        }
+
+        div.container
+        {
+            background-color: aqua;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: flex-start;
+            height: 500px;
+
+        }
+
+        div.item
+        {
+            background-color: blueviolet;
+            border: 1px solid black;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        div#i1
+        {
+            align-self: stretch; 
+            /*estica o item para preencher*/
+        }
+
+        div#i2
+        {
+            align-self: auto; 
+            /*segue a configuração do container(pai)*/
+        }
+
+        div#i3
+        {
+            align-self: flex-end; 
+            /*cola o item no final do C.E*/
+        }
+
+        div#i4
+        {
+            align-self: center;
+            /*alinha o item no meio dos eixos C.S e C.E*/
+        }
+
+        div#i5
+        {
+            align-self: center; 
+            /*alinha o item no meio dos eixos C.S e C.E*/
+        }
+
+        div#i6
+        {
+            align-self: flex-end; 
+            /*cola o item no final do C.E*/
+        }
+
+        div#i7
+        {
+            align-self: flex-start; 
+            /*cola o item no começo do C.E*/
+        }
+
+        div#i8
+        {
+            align-self: stretch; /*estica o item para preencher*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="i1">A</div>
+        <div class="item" id="i2">B</div>
+        <div class="item" id="i3">C</div>
+        <div class="item" id="i4">D</div>
+        <div class="item" id="i5">E</div>
+        <div class="item" id="i6">F</div>
+        <div class="item" id="i7">G</div>
+        <div class="item" id="i8">H</div>
+    </div>
+</body>
+</html>
