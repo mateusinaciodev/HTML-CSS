@@ -30,14 +30,15 @@ header /*container (elemento-pai)*/
 
 header > h1
 {
-    background-color: lightblue;
+    background-color: rgb(126, 128, 126);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.500);
 
     flex: 0, 0, 200px; /*para logo do cliente*/
 }
 
 header > nav
 {
-    background-color: lightgreen;
+    background-color: rgb(126, 128, 126);
 
     display: flex;
     flex-flow: row wrap;
