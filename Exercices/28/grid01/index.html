@@ -24,14 +24,22 @@
             display: grid;
             grid-template-columns: auto auto;
             grid-template-rows: 50px 50px 50px 50px;
-            grid-gap: 10px;
+            gap: 10px;
             text-align: center;
+            border: 2px solid black;
+            height: 300px;
+
+            align-items: normal;
+            justify-items: normal;
+            align-content: normal;
+            justify-content: normal;
         }
 
         div.item
         {
             background-color: lightblue;
-            border: 1px solid black;
+            border: 2px solid black;
+            padding: 5px;
         }
             
     </style>
@@ -39,6 +47,7 @@
 <body>
     <main>
         <div class="container">
+            <!--escreva div.container que o vsc já criará a div com a classe container, funciona para item também-->
             <div class="item">A</div>
             <div class="item">B</div>
             <div class="item">C</div>
