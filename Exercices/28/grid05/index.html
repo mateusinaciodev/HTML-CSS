@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Areas</title>
+    <style>
+        *
+        {
+            margin: 0px;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body
+        {
+            background-color: gray;
+            border: 1px solid black;
+        }
+
+        main
+        {
+            background-color: lightgray;
+            border: 1px solid black;
+        }
+
+        div.container
+        {
+            background-color: lightgoldenrodyellow;
+            border: 1px solid black;
+
+            /*grid configs*/
+            display: grid;
+            grid-template-rows: repeat(3, 100px);
+            grid-template-columns: repeat(4, 1fr);
+            gap: 5px;
+        }
+
+        div.caixa1
+        {
+            background-color: green;
+            border: 1px solid black;
+            text-align: center;
+
+            grid-area: 1 / 1 / 2 / 5;
+            /*grid-area é uma short-hand para ajudar a aplicar as dimensões:
+            primeiro valor(1) é para row-start
+            segundo valor(1) é para column-start
+            terceiro valor(2) é para row-end
+            quarto valor(5) é para column-end
+            */
+            grid-row: 1 / 2; 
+            /*short-hand para linhas: 
+            (1) é o row-start da linha
+            (2) é o row-end da linha*/
+            grid-column: 1 / 5;
+            /*
+            short-hand para colunas:
+            (1) é o column-start da coluna
+            (5) é o column-end da coluna
+            */
+
+
+            /*
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 5;
+            */
+        }
+
+        div.caixa2
+        {
+            background-color: yellow;
+            border: 1px solid black;
+            text-align: center;
+            
+            grid-area: 2 / 1 / 4 / 3;
+
+            grid-row: 2 / 4;
+            grid-column: 1 / 3;
+            /*
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            */
+        }
+
+        div.caixa3
+        {
+            background-color: rgb(10, 169, 222);
+            border: 1px solid black;
+            text-align: center;
+
+            grid-area: 2/ 3 / 4 / 5;
+
+            grid-row: 2 / 4;
+            grid-column: 3 / 5;
+            /*
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 3;
+            grid-column-end: 5;
+            */
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="caixa1">Caixa 01</div>
+            <div class="caixa2">Caixa 02</div>
+            <div class="caixa3">Caixa 03</div>
+        </div>
+    </main>
+</body>
+</html>
